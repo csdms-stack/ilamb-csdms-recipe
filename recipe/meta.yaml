@@ -1,0 +1,35 @@
+{% set name = "csdms-ilamb" %}
+{% set version = "0.1.1" %}
+
+package:
+  name: {{ name }}
+  version: {{ version }}
+
+source:
+  git_url: https://github.com/permamodel/bmi-ilamb
+  git_rev: v{{ version }}
+
+build:
+  number: 0
+
+requirements:
+  build:
+    - babelizer
+    - ilamb
+    - pyyaml
+    - basic-modeling-interface
+  run:
+    - cca-tools
+    - ilamb
+
+test:
+  requires:
+    - pymt
+
+about:
+  home: http://csdms.colorado.edu/wiki/Model:ILAMB
+  license: MIT
+  summary:
+    Componentized version of the International Land Model Benchmarking
+    Project (ILAMB) benchmarking toolkit.
+  dev_url: https://github.com/permamodel/bmi-ilamb
