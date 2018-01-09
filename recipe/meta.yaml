@@ -24,7 +24,7 @@ requirements:
 
 test:
   requires:
-    - pymt
+    - pymt =0.2
 
 about:
   home: http://csdms.colorado.edu/wiki/Model:ILAMB
