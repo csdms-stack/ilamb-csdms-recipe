@@ -16,11 +16,11 @@ requirements:
   build:
     - babelizer
     - ilamb
-    - pyyaml
-    - basic-modeling-interface
   run:
     - cca-tools
     - ilamb
+    - pyyaml
+    - basic-modeling-interface
 
 test:
   requires:
