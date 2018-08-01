@@ -1,5 +1,5 @@
 {% set name = "csdms-ilamb" %}
-{% set version = "0.1.1" %}
+{% set version = "0.1.2" %}
 
 package:
   name: {{ name }}
@@ -24,7 +24,8 @@ requirements:
 
 test:
   requires:
-    - pymt =0.2
+    - netcdf-fortran=4.4.4=5
+    - pymt==0.2
 
 about:
   home: http://csdms.colorado.edu/wiki/Model:ILAMB
